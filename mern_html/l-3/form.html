@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice</title>
+
+</head>
+<body>
+    <form action=""
+  method="post"
+  enctype="multipart/form-data"
+  target="_blank"
+  name="registerForm"
+  autocomplete="on">
+        <label for="">Full Name:</label>
+        <input type=""text" placeholder="Enter your name here"><br><br>
+        <label for="">Email</label>
+        <input type="email" placeholder="Enter your email here"><br><br>
+        
+        <input type="checkbox" >
+        <label for="first year">1st Year</label><br>
+
+        <input type="checkbox" >
+        <label for="second year">2nd Year</label><br>
+
+        <input type="number" placeholder="enter your Age here" min="1" max="20" ><br><br>
+
+
+
+
+
+        <input type ="radio" name="gender">
+        <label>Male</label>  
+        <input type="radio" name="gender">  
+        <!-- Here name is used o make a group of radio buttons -->
+        <label>Female</label>
+        <br><br>
+
+        <!-- select or drop down menu -->
+
+        <select multiple size="2" >
+            <option selected disabled>Select your year</option>
+
+            <!-- Here selected is used to show the default option
+            and disabled is used to disable the option so that user cannot select it -->
+           
+            <option>1st year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+        </select>
+
+
+        <br><br><input type="submit" value="Submit">
+    
+    </form>
+</body>
+</html>

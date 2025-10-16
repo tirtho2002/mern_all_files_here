@@ -1,0 +1,51 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header{
+    background-color:blueviolet;
+    color: white;
+    padding:100px;
+    text-align:center;
+}
+
+nav a {
+    padding:10px;
+    background-color:rgb(202, 157, 157);
+    color :white;
+}
+
+main{
+    padding:20px;
+    text-align:center;
+    background-color: violet;
+    border: 20px solid rgb(255, 255, 255);
+    
+}
+
+footer{
+    background-color:blueviolet;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+
+
+}
+
+ table {
+      border-collapse: collapse; /* neat borders */
+      margin: auto;             /* centers the table */
+      width: 60%;               /* optional: set width */
+      text-align: center;       /* center the text inside cells */
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+    } 
