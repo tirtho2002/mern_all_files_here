@@ -1,0 +1,14 @@
+.container1{
+    width:100 px;
+    height:200 px;
+    background-color:yellow;
+    padding: 60px 30px;
+
+}
+
+.container2{
+    width:200 px;
+    height:400 px;
+    background-color:tomato;
+    padding: 80px 40px;
+}
