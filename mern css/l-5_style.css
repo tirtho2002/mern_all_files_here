@@ -1,14 +1,19 @@
 .container1{
-    width:100 px;
-    height:200 px;
+    width:100px;
+    height:200px;
     background-color:yellow;
     padding: 60px 30px;
-
+    border: 40px solid green;
+    overflow:auto;
+    font-family: Playwrite DE Grund Guides;
+    /* box-sizing: border-box; */
 }
 
 .container2{
-    width:200 px;
-    height:400 px;
+    width:100px;
+    height:200px;
     background-color:tomato;
-    padding: 80px 40px;
+    padding: 60px 30px;
+    border:40px solid black;
+    overflow:auto;
 }
