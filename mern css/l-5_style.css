@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "bangla_font";
+    src: url("Unicode/bangla_font.ttf") format("truetype");
+}
+
+@font-face{
+    font-family:"bangla_italic";
+    src:url("Unicode/bangla_font_italic.ttf") format("truetype");
+}
+
+
+
 .container1{
     width:100px;
     height:200px;
@@ -16,4 +28,13 @@
     padding: 60px 30px;
     border:40px solid black;
     overflow:auto;
+}
+
+.bangla{
+    text-align: center;
+font-family: "bangla_font";
+}
+.bangla2{
+    
+    font-family: "bangla_italic";
 }
