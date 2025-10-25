@@ -1,0 +1,121 @@
+---background-position: x-position y-position;
+background-position: keyword;
+
+| Value           | Description                             |
+| --------------- | --------------------------------------- |
+| `left top`      | Top-left corner (default)               |
+| `left center`   | Left side, vertically centered          |
+| `left bottom`   | Bottom-left corner                      |
+| `right top`     | Top-right corner                        |
+| `right center`  | Right side, vertically centered         |
+| `right bottom`  | Bottom-right corner                     |
+| `center top`    | Center horizontally, top vertically     |
+| `center center` | Center both horizontally and vertically |
+| `center bottom` | Center horizontally, bottom vertically  |
+
+--background-position: center center;
+background-position: 50% 50%; /* Center */
+background-position: 0 0; /* Top-left */
+background-position: 100% 100%; /* Bottom-right */
+background-position: 10px 20px; /* 10px from left, 20px from top */
+
+--background-position: right; /* right center */
+background-position: 20px; /* 20px from the left, vertically centered */
+
+--body {
+  background-image: url("image.jpg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: cover;
+}
+
+
+---background-image
+
+body {
+  background-image: url("banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+---background-gradient
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Background Gradients</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .box {
+      width: 250px;
+      height: 150px;
+      border-radius: 12px;
+      margin: 20px auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      border: 2px solid #ccc;
+    }
+
+    /* 1️⃣ Linear Gradient */
+    .linear {
+      background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+    }
+
+    /* 2️⃣ Linear Diagonal */
+    .diagonal {
+      background-image: linear-gradient(45deg, #00c6ff, #0072ff);
+    }
+
+    /* 3️⃣ Radial Gradient */
+    .radial {
+      background-image: radial-gradient(circle, #ff9a9e, #fad0c4);
+    }
+
+    /* 4️⃣ Conic Gradient */
+    .conic {
+      background-image: conic-gradient(from 0deg, red, yellow, lime, cyan, blue, magenta, red);
+    }
+
+    /* 5️⃣ Gradient + Image Overlay */
+    .overlay {
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url("https://picsum.photos/400/200");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 18px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    }
+
+  </style>
+</head>
+<body>
+  <h2>🎨 CSS Background Gradient Examples</h2>
+
+  <div class="box linear"></div>
+  <div class="box diagonal"></div>
+  <div class="box radial"></div>
+  <div class="box conic"></div>
+  <div class="box overlay">Gradient + Image</div>
+
+</body>
+</html>
+
+
